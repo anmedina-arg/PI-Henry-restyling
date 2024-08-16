@@ -1,0 +1,76 @@
+.backgroundLandingPage {
+  background-image: url("../images/landing.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  color: #fff;
+  font-size: 4rem;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+
+  padding: 1rem;
+}
+
+.startBtn {
+  background-color: rgb(253, 243, 47);
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 2.5rem;
+  padding: 0.2rem 0.5rem;
+  align-self: flex-start;
+  margin-left: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.textDecoration {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+
+.subtitle {
+  background-color: rgb(245, 61, 5);
+  border-radius: 5px;
+  padding-inline: 1rem;
+  align-self: flex-start;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+
+@media (hover: hover) {
+  .startBtn:hover {
+    background-color: transparent;
+    border-color: rgb(253, 243, 47);
+    box-shadow: 1px 1px 100px 4px rgb(253, 243, 47);
+  }
+
+  .textDecoration:hover {
+    color: rgb(253, 243, 47);
+  }
+}
+
+@media (width <=1200px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .startBtn {
+    align-self: center;
+    margin-left: 0;
+  }
+
+  .subtitle {
+    align-self: center;
+    margin-left: 0;
+  }
+}
